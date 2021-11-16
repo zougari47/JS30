@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.clock{
+    width: 20rem;
+    height: 20rem;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    position: relative;
+}
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.hand{
+    background-color: #000;
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all .05s;
+    transform: rotate(45deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+}
+.second-hand{
+    background-color: red;
+    height: 3px;
+}
