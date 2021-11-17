@@ -27,4 +27,7 @@ In this section I will document what I learn from any lessons
 
 - **CSS variable and JS**
   - learn new event => change, mousemove
-  - use .style.setProperty(prop, value);
+  - use documentElement.style.setProperty(prop, value);
+
+- **Array Cardio Day 1
+  - 
