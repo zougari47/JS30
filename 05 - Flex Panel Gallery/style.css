@@ -1,0 +1,69 @@
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ html{
+     font-size: 20px;
+     font-family: sans-serif;
+ }
+ .panels{
+     overflow: hidden;
+     min-height: 100vh;
+     display: flex;
+     cursor: pointer;
+ }
+.panel{
+    background: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    font-size: 1rem;
+
+
+}
+
+ .panel1 { background-image:url(https://images.unsplash.com/photo-1519865885898-a54a6f2c7eea?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BsYXNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60); }
+ .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+ .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+ .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+ .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+
+ .panel > *{
+     width: 100%;
+     transition: transform .5s;
+     flex: 1 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.panel.open-active > *:last-child { transform: translateY(0); }
+
+
+.panel p {
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2rem;
+}
+.panel p:nth-child(2) {
+    font-size: 4rem;
+}
+.panel.open{
+    flex: 5;
+    font-size: 2rem;
+}
