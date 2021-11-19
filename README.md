@@ -29,7 +29,7 @@ In this section I will document what I learn from any lessons
   - learn new event => change, mousemove
   - use documentElement.style.setProperty(prop, value);
 
-- **Array Cardio Day 1
+- **Array Cardio Day 1**
   
    *practice array methods*
     - filter => 
@@ -48,3 +48,8 @@ In this section I will document what I learn from any lessons
     - reduce =>
       - returns a single value which is the function's accumulated result.
       -  does not execute the function for empty array elements   
+  
+
+- **Flex Panel Gallery**
+  - you can listen to the same element with multiple EventLister  
+  - flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
