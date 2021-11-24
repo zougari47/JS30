@@ -1,20 +1,3 @@
-// *odd & even 
-//      div:nth-child(odd/even)
-//      Odd and even are keywords that can be used to match child elements whose index is odd or even (the index of the first child is 1).
-
-// *rotate x 
-// The rotateX() CSS function defines a transformation that rotates an element around the abscissa (horizontal axis) without deforming it.
-// , *fetch(), 
-// The fetch() method in JavaScript is used to request to the server and load the information in the webpages. The request can be of any APIs that returns the data of the format JSON or XML. 
-// *then ,
-// The then() method in JavaScript has been defined in the Promise API and is used to deal with asynchronous tasks such as an API call.
-//  *promis
-//  A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
-// *.json() 
-// The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON
-// presective
-
-
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
 const cities = [];
