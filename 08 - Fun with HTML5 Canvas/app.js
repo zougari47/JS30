@@ -1,11 +1,11 @@
-window.alert("Try to draw something 🖌");
+// window.alert("Try to draw something 🖌");
 
 const canvas = document.querySelector("#draw");
 
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-console.log(ctx);
+console.log(canvas.height);
 
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
