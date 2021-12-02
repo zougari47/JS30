@@ -99,6 +99,13 @@ In this section I will document what I learn from any lessons
       - <span>mousemove</span> => The event occurs when the pointer is moving while it is over an element.
       - <span>mouseup</span> => The event occurs when a user releases a mouse button over an element
       - <span>mouseout</span> => The event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+  
+  <br>
+
+  - ** Must know Dev Tools tricks**
+    - *Practice console functions*
+
+
 
 
 
