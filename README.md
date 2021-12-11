@@ -102,8 +102,13 @@ In this section I will document what I learn from any lessons
   
   <br>
 
-  - ** Must know Dev Tools tricks**
+  - **Must know Dev Tools tricks**
     - *Practice console functions*
+  
+  <br>
+
+  - **Hold Shift to Check Multiple Checkboxes**
+    - <span>event.shiftkey </span> => returns a Boolean value that indicates whether or not the "SHIFT" key was pressed when a mouse event was triggered.
 
 
 
