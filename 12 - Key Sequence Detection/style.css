@@ -1,0 +1,35 @@
+*,
+*::after,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.n{
+    background-color: rgba(21, 65, 21, 0.192);
+    cursor: pointer;
+    position: relative;
+}
+#name{
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .6s;
+}
+
+.n:hover  #name {
+    opacity: 1;
+}
