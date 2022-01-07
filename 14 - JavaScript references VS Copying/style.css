@@ -1,6 +1,19 @@
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+pre {
+  /* background: green !important; */
+  /* padding-right: 0; */
 }
