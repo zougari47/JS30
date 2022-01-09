@@ -1,12 +1,12 @@
 html {
   box-sizing: border-box;
-  background: url("./oh-la-la.jpeg");
+  background: url('./oh-la-la.jpeg');
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 }
 *,
 *::before,
@@ -57,16 +57,18 @@ h2 {
 }
 
 .plates input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .plates input + label::before {
-  content: "⬜️";
+  content: '⬜';
   margin-right: 10px;
 }
 
 .plates input:checked + label::before {
-  content: "🌮";
+  content: '✅';
 }
 
 .add-items {
@@ -77,4 +79,17 @@ h2 {
   padding: 10px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: 30px;
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
