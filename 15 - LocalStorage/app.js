@@ -17,6 +17,7 @@ function addItem(e) {
 }
 
 function populateList(plates = [], platesList) {
+  if (plates.length === 0) return;
   platesList.innerHTML = plates
     .map((plate, i) => {
       return `
@@ -42,18 +43,24 @@ function toggleDone(e) {
 
 function doAll(e) {
   // check all
+  const _checkboxes = document.querySelectorAll('[data-index]') || '';
   if (e.target.innerText === 'Check all') {
-    //check all code here
-    console.log(true);
+    _checkboxes.forEach(_checkboxe => (_checkboxe.checked = true));
+    items.forEach(itm => (itm.done = !itm.done));
+    localStorage.setItem('items', JSON.stringify(items));
   } else if (e.target.innerText === 'Uncheck all') {
-    //Uncheck all code here
+    _checkboxes.forEach(_checkboxe => (_checkboxe.checked = false));
+    items.forEach(itm => (itm.done = !itm.done));
+    localStorage.setItem('items', JSON.stringify(items));
   } else if (e.target.innerText === 'Clear all') {
-    //Clear all code here
+    localStorage.clear();
+    items.length = 0;
+    itemsList.innerHTML = '<li>Loading Tapas...</li>';
+    addItems.reset();
   }
-  // console.log(e.target);
 }
 
 addItems.addEventListener('submit', addItem);
 itemsList.addEventListener('click', toggleDone);
-btns.forEach((btn) => btn.addEventListener('click', doAll));
+btns.forEach(btn => btn.addEventListener('click', doAll));
 populateList(items, itemsList);
