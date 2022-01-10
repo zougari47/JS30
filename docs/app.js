@@ -1,1 +1,1 @@
-location.replace('../15 - LocalStorage/index.html');
+location.replace('../15_LocalStorage/index.html');
