@@ -154,12 +154,16 @@ a.button {
   background: #019fe9;
 }
 
-.button[href*='facebook'] {
-  background: #3b5998;
+.button[href*='codepen'] {
+  background: #1e1f26;
 }
 
-.button[href*='courses'] {
-  background: #ffc600;
+.button[href*='linkedin'] {
+  background: #0a66c2;
+}
+
+.button[href*='github'] {
+  background: #24292f;
 }
 
 .lang {
