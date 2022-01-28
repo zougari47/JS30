@@ -4,79 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../4/console.css" />
     <title>JavaScript References VS Copying</title>
   </head>
   <body>
     <div class="container">
-      <pre
-        class="hljs"
-        style="
-          display: block;
-          overflow-x: auto;
-          padding: 0.5em;
-          background: rgb(43, 43, 43) none repeat scroll 0% 0%;
-          color: rgb(186, 186, 186);
-        "
-      > 
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//start with strings, numbers and boleans</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> age = <span class="hljs-number" style="color: rgb(104, 150, 186);">100</span>;
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> age2 = age;
-<span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(age, age2);
-age = <span class="hljs-number" style="color: rgb(104, 150, 186);">200</span>;
-<span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(age, age2);
+      <p>
+        This one was practice in the console, click on the button to see the
+        code
+      </p>
+      <button>See Code</button>
+      <div class="code">
+        <pre
+          class="hljs"
+          style="
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: rgb(40, 42, 54) none repeat scroll 0% 0%;
+            color: rgb(248, 248, 242);
+          "
+        >
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//start with strings, numbers and boleans</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">let</span> age = <span class="hljs-number">100</span>;
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">let</span> age2 = age;
+            <span class="hljs-built_in">console</span>.log(age, age2);
+            age = <span class="hljs-number">200</span>;
+            <span class="hljs-built_in">console</span>.log(age, age2);
             
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> name = <span class="hljs-string" style="color: rgb(224, 196, 108);">"ahmed"</span>;
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> name2 = name;
-<span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(name, name2);
-name = <span class="hljs-string" style="color: rgb(224, 196, 108);">"aziz"</span>;
-<span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(name, name2);
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">let</span> name = <span class="hljs-string" style="color: rgb(241, 250, 140);">"ahmed"</span>;
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">let</span> name2 = name;
+            <span class="hljs-built_in">console</span>.log(name, name2);
+            name = <span class="hljs-string" style="color: rgb(241, 250, 140);">"aziz"</span>;
+            <span class="hljs-built_in">console</span>.log(name, name2);
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//let's say we have an array</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> players = [<span class="hljs-string" style="color: rgb(224, 196, 108);">"Wes"</span>, <span class="hljs-string" style="color: rgb(224, 196, 108);">"Sarah"</span>, <span class="hljs-string" style="color: rgb(224, 196, 108);">"Ryan"</span>, <span class="hljs-string" style="color: rgb(224, 196, 108);">"Poppy"</span>];
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//let's say we have an array</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> players = [<span class="hljs-string" style="color: rgb(241, 250, 140);">"Wes"</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">"Sarah"</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">"Ryan"</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">"Poppy"</span>];
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//and we want to make a copy of it</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> team = players;
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//and we want to make a copy of it</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> team = players;
             
-<span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(players, team);
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//you might think we can just something like this:</span>
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">// team[3] = "Ahmed";</span>
+            <span class="hljs-built_in">console</span>.log(players, team);
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//you might think we can just something like this:</span>
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">// team[3] = "Ahmed";</span>
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//the orginal one also change because is an array refernce,</span>
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">// not an array copy</span>
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">// to make a copy we use slice method</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> team2 = players.slice();
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//the orginal one also change because is an array refernce,</span>
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">// not an array copy</span>
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">// to make a copy we use slice method</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> team2 = players.slice();
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//or we create a new array and concat the old one in</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> team3 = [].concat(players);
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//or we create a new array and concat the old one in</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> team3 = [].concat(players);
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//or use the new ES6 Spread</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> team4 = [...players];
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//or use the new ES6 Spread</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> team4 = [...players];
             
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> team5 = <span class="hljs-built_in" style="color: rgb(224, 196, 108);">Array</span>.from(players);
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> team5 = <span class="hljs-built_in">Array</span>.from(players);
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//the same thing goes for objects,</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> person = {
-              name: <span class="hljs-string" style="color: rgb(224, 196, 108);">"Ahmed Zougar"</span>,
-              age: <span class="hljs-string" style="color: rgb(224, 196, 108);">"21"</span>,
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//the same thing goes for objects,</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> person = {
+              name: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Ahmed Zougar"</span>,
+              age: <span class="hljs-string" style="color: rgb(241, 250, 140);">"21"</span>,
             };
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//and think we make a copy:</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> captian = person;
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">// captian.number = 90;</span>
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//and think we make a copy:</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> captian = person;
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">// captian.number = 90;</span>
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//how do we take a copy insted?</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> cap2 = <span class="hljs-built_in" style="color: rgb(224, 196, 108);">Object</span>.assign({}, person, { number: <span class="hljs-number" style="color: rgb(104, 150, 186);">45</span> });
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//how do we take a copy insted?</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> cap2 = <span class="hljs-built_in">Object</span>.assign({}, person, { number: <span class="hljs-number">45</span> });
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//spread</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> cap3 = { ...person };
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//spread</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> cap3 = { ...person };
             
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">// Object to assign work for 1 level not in deep level</span>
-<span class="hljs-comment" style="color: rgb(127, 127, 127);">//What your can do</span>
-<span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> cap4 = <span class="hljs-built_in" style="color: rgb(224, 196, 108);">JSON</span>.parse(<span class="hljs-built_in" style="color: rgb(224, 196, 108);">JSON</span>.stringify(captian));
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Object to assign work for 1 level not in deep level</span>
+            <span class="hljs-comment" style="color: rgb(98, 114, 164);">//What your can do</span>
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> cap4 = <span class="hljs-built_in">JSON</span>.parse(<span class="hljs-built_in">JSON</span>.stringify(captian));
             </pre>
+      </div>
     </div>
   </body>
   <script src="./app.js"></script>
+  <script src="../4/console.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </html>

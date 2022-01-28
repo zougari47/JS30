@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array Cardio Day 2 🦾</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>
-    <pre>
-    In this Project I do The hole practice in the console
-    so I you may check the console or source Code <a href="https://github.com/zougari47/JS30-Master/blob/master/07%20-%20Array%20Cardio%20Day%202/app.js">Here</a>
-    </pre>
-    </h1>
-</body>
-<script src="./app.js"></script>
+    <link rel="stylesheet" href="../4/console.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        This one was practice in the console, click on the button to see the
+        code
+      </p>
+      <button>See Code</button>
+      <div class="code">
+        <pre
+          class="hljs"
+          style="
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: rgb(40, 42, 54) none repeat scroll 0% 0%;
+            color: rgb(248, 248, 242);
+          "
+        >
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// ## Array Cardio Day 2</span>
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> people = [
+                  { name: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Wes"</span>, year: <span class="hljs-number">1988</span> },
+                  { name: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Kait"</span>, year: <span class="hljs-number">1986</span> },
+                  { name: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Irv"</span>, year: <span class="hljs-number">1970</span> },
+                  { name: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Lux"</span>, year: <span class="hljs-number">2015</span> },
+                ];
+        
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> comments = [
+                  { text: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Love this!"</span>, id: <span class="hljs-number">523423</span> },
+                  { text: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Super good"</span>, id: <span class="hljs-number">823423</span> },
+                  { text: <span class="hljs-string" style="color: rgb(241, 250, 140);">"You are the best"</span>, id: <span class="hljs-number">2039842</span> },
+                  { text: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Ramen is my fav food ever"</span>, id: <span class="hljs-number">123523</span> },
+                  { text: <span class="hljs-string" style="color: rgb(241, 250, 140);">"Nice Nice Nice!"</span>, id: <span class="hljs-number">542328</span> },
+                ];
+        
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Some and Every Checks</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.some() // is at least one person 19 or older?</span>
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> isAdult = people.some(person =&gt; (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">new</span> <span class="hljs-built_in">Date</span>().getFullYear()) - person.year &gt;= <span class="hljs-number">19</span>);
+                <span class="hljs-built_in">console</span>.log({isAdult});
+        
+        
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.every() // is everyone 19 or older?</span>
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> allAdult = people.every(person =&gt; (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">new</span> <span class="hljs-built_in">Date</span>().getFullYear()) - person.year &gt;= <span class="hljs-number">19</span>);
+                <span class="hljs-built_in">console</span>.log({allAdult});
+        
+        
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.find() </span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// find the comment with the ID of 823423</span>
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> comment = comments.find(comment =&gt; (comment.id === <span class="hljs-number">823423</span>));
+                <span class="hljs-built_in">console</span>.log(comment);
+        
+        
+        
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.findIndex()</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Find the comment with this ID</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// delete the comment with the ID of 823423</span>
+                <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> index = comments.findIndex(comment =&gt; comment.id === <span class="hljs-number">823423</span>);
+                <span class="hljs-built_in">console</span>.log(index);
+        
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// to delete it =&gt; comments.splice(index, 1)</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">//or</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// const newComment = [</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">//     ...comments.slice(0, index),</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">//     ...comments.slice(index + 1)</span>
+                <span class="hljs-comment" style="color: rgb(98, 114, 164);">// ];</span></pre>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+  <script src="../4/console.js"></script>
 </html>

@@ -1,19 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./console.css" />
     <title>Array Cardio Day 1</title>
-</head>
-<body>
-    <h1>
-    <pre>
-    In this Project I do The hole practice in the console
-    so I you may check the console or source Code <a href="https://github.com/zougari47/JS30-Master/blob/master/04%20-%20Array%20Cardio%20Day%201/app.js">Here</a>
-    </pre>
-    </h1>
-</body>
-<script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        This one was practice in the console, click on the button to see the
+        code
+      </p>
+      <button>See Code</button>
+      <div class="code">
+        <pre
+          class="hljs"
+          style="
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: rgb(40, 42, 54) none repeat scroll 0% 0%;
+            color: rgb(248, 248, 242);
+          "
+        > 
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">//data we gonna work with</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> inventors = [
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Albert'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Einstein'</span>, year: <span class="hljs-number">1879</span>, passed: <span class="hljs-number">1955</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Isaac'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Newton'</span>, year: <span class="hljs-number">1643</span>, passed: <span class="hljs-number">1727</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Galileo'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Galilei'</span>, year: <span class="hljs-number">1564</span>, passed: <span class="hljs-number">1642</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Marie'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Curie'</span>, year: <span class="hljs-number">1867</span>, passed: <span class="hljs-number">1934</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Johannes'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Kepler'</span>, year: <span class="hljs-number">1571</span>, passed: <span class="hljs-number">1630</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Nicolaus'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Copernicus'</span>, year: <span class="hljs-number">1473</span>, passed: <span class="hljs-number">1543</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Max'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Planck'</span>, year: <span class="hljs-number">1858</span>, passed: <span class="hljs-number">1947</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Katherine'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Blodgett'</span>, year: <span class="hljs-number">1898</span>, passed: <span class="hljs-number">1979</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Ada'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Lovelace'</span>, year: <span class="hljs-number">1815</span>, passed: <span class="hljs-number">1852</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Sarah E.'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Goode'</span>, year: <span class="hljs-number">1855</span>, passed: <span class="hljs-number">1905</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Lise'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Meitner'</span>, year: <span class="hljs-number">1878</span>, passed: <span class="hljs-number">1968</span> },
+          { first: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Hanna'</span>, last: <span class="hljs-string" style="color: rgb(241, 250, 140);">'Hammarström'</span>, year: <span class="hljs-number">1829</span>, passed: <span class="hljs-number">1909</span> },
+        ];
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> people = [
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bernhard, Sandra'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bethea, Erin'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Becker, Carl'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bentsen, Lloyd'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Beckett, Samuel'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Blake, William'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berger, Ric'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Beddoes, Mick'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Beethoven, Ludwig'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Belloc, Hilaire'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Begin, Menachem'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bellow, Saul'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Benchley, Robert'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Blair, Robert'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Benenson, Peter'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Benjamin, Walter'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berlin, Irving'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Benn, Tony'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Benson, Leana'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bent, Silas'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berle, Milton'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berry, Halle'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Biko, Steve'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Beck, Glenn'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bergman, Ingmar'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Black, Elk'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berio, Luciano'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berne, Eric'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berra, Yogi'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Berry, Wendell'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bevan, Aneurin'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Ben-Gurion, David'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bevel, Ken'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Biden, Joseph'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bennington, Chester'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Bierce, Ambrose'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Billings, Josh'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Birrell, Augustine'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Blair, Tony'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Beecher, Henry'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'Biondo, Frank'</span>,
+        ];
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.filter()</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 1. Filter the list of inventors for those who were born in the 1500's</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> fifteen = inventors.filter(
+          (inventor) =&gt; inventor.year &gt;= <span class="hljs-number">1500</span> &amp;&amp; inventor.year &lt; <span class="hljs-number">1600</span>
+        );
+        <span class="hljs-built_in">console</span>.table(fifteen);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.map()</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 2. Give us an array of the inventors first and last names</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> fullNames = inventors.map(
+          (inventor) =&gt; inventor.first + <span class="hljs-string" style="color: rgb(241, 250, 140);">' '</span> + inventor.last
+        );
+        <span class="hljs-built_in">console</span>.table(fullNames);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.sort()</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 3. Sort the inventors by birthdate, oldest to youngest</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> ordered = inventors.sort((a, b) =&gt; (a.year &gt; b.year ? <span class="hljs-number">1</span> : <span class="hljs-number">-1</span>));
+        <span class="hljs-built_in">console</span>.table(ordered);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Array.prototype.reduce()</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 4. How many years did all the inventors live all together?</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> totalYears = inventors.reduce((total, inventor) =&gt; {
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> total + (inventor.passed - inventor.year);
+        }, <span class="hljs-number">0</span>);
+        <span class="hljs-built_in">console</span>.log(totalYears);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 5. Sort the inventors by years lived</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> oldest = inventors.sort((a, b) =&gt; {
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> lastGuy = a.passed - a.year;
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> nextGuy = b.passed - b.year;
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> lastGuy &gt; nextGuy ? <span class="hljs-number">-1</span> : <span class="hljs-number">1</span>;
+        });
+        <span class="hljs-built_in">console</span>.table(oldest);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris</span>
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 7. sort Exercise</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Sort the people alphabetically by last name</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> alpha = people.sort((lastOne, nextOne) =&gt; {
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> [aLast, afirst] = lastOne.split(<span class="hljs-string" style="color: rgb(241, 250, 140);">', '</span>);
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> [bLast, bFirst] = nextOne.split(<span class="hljs-string" style="color: rgb(241, 250, 140);">', '</span>);
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> aLast &gt; bLast ? <span class="hljs-number">-1</span> : <span class="hljs-number">1</span>;
+        });
+        <span class="hljs-built_in">console</span>.log(alpha);
+        
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// 8. Reduce Exercise</span>
+        <span class="hljs-comment" style="color: rgb(98, 114, 164);">// Sum up the instances of each of these</span>
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> data = [
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'car'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'car'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'truck'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'truck'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'bike'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'walk'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'car'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'van'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'bike'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'walk'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'car'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'van'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'car'</span>,
+          <span class="hljs-string" style="color: rgb(241, 250, 140);">'truck'</span>,
+        ];
+        <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> transportation = data.reduce((obj, item) =&gt; {
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> (!obj[item]) {
+            obj[item] = <span class="hljs-number">0</span>;
+          }
+          obj[item]++;
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> obj;
+        }, {});
+        <span class="hljs-built_in">console</span>.log(transportation);</pre>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+  <script src="./console.js"></script>
 </html>

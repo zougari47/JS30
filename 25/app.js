@@ -1,3 +1,5 @@
+window.alert('this lesson was about bubbling and capture in JavaScript');
+
 const divs = document.querySelectorAll('div');
 
 function LogText(e) {
@@ -5,7 +7,7 @@ function LogText(e) {
   //   e.stopPropagation();   //stop Bubbling!
 }
 
-divs.forEach(div => div.addEventListener('click', LogText));
+divs.forEach((div) => div.addEventListener('click', LogText));
 document.body.addEventListener('click', LogText);
 
 // div => div.addEventListener('click', LogText, {

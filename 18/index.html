@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vidoes</title>
+    <link rel="stylesheet" href="../4/console.css" />
+    <title>Videos Duration</title>
   </head>
+  <style>
+    ul {
+      display: none;
+    }
+  </style>
   <body>
+    <div class="container">
+      <p>
+        This example I count the total of time of a list (ul) of video that have
+        data attribute (data-time="2:23")
+      </p>
+      <button>See Code</button>
+      <div class="code">
+        <pre
+          class="hljs"
+          style="
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: rgb(40, 42, 54) none repeat scroll 0% 0%;
+            color: rgb(248, 248, 242);
+          "
+        >
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> timeNode = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string" style="color: rgb(241, 250, 140);">'[data-time]'</span>);
+
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> seconds = [...timeNode]
+            .map(node =&gt; node.dataset.time)
+            .map(timeCode =&gt; {
+              <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> [mins, secs] = timeCode.split(<span class="hljs-string" style="color: rgb(241, 250, 140);">':'</span>).map(<span class="hljs-built_in">parseFloat</span>);
+              <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> mins * <span class="hljs-number">60</span> + secs;
+            })
+            .reduce((a, b) =&gt; a + b);
+          
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">let</span> secondsLeft = seconds;
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> hours = <span class="hljs-built_in">Math</span>.floor(secondsLeft / <span class="hljs-number">3600</span>);
+          secondsLeft %= <span class="hljs-number">3600</span>;
+          <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">const</span> minutes = <span class="hljs-built_in">Math</span>.floor(secondsLeft / <span class="hljs-number">60</span>);
+          secondsLeft %= <span class="hljs-number">60</span>;
+          <span class="hljs-built_in">console</span>.log(hours, minutes, secondsLeft);</pre>
+      </div>
+    </div>
     <ul class="videos">
       <li data-time="5:43">Video 1</li>
       <li data-time="2:33">Video 2</li>
@@ -69,4 +110,5 @@
     </ul>
   </body>
   <script src="./app.js"></script>
+  <script src="../4/console.js"></script>
 </html>

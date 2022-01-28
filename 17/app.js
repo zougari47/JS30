@@ -1,3 +1,5 @@
+window.alert('in this example I sorted the item without "the", "a", "an" ');
+
 const bands = [
   'The Plot in You',
   'The Devil Wears Prada',
@@ -22,5 +24,5 @@ let sorted = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
 console.log(sorted);
 
 document.querySelector('#bands').innerHTML = sorted
-  .map(band => `<li>${band}</li>`)
+  .map((band) => `<li>${band}</li>`)
   .join('');
