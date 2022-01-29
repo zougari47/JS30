@@ -179,7 +179,7 @@ function randomSort(arr) {
 
 function openLink() {
   const url = this.dataset.url;
-  window.open(url, '_blank');
+  window.open(url, '_self');
 }
 
 const cards = document.querySelectorAll('.card');
