@@ -17,17 +17,17 @@ const data = [
   {
     title: 'array cardio day 1',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small3.jpg"',
-    link: 'https://zougari47.github.io/JS30/mySolutions/3/'
+    link: 'https://zougari47.github.io/JS30/mySolutions/4/'
   },
   {
     title: 'flex panels image gallery',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small4.jpg"',
-    link: 'https://zougari47.github.io/JS30/mySolutions/4/'
+    link: 'https://zougari47.github.io/JS30/mySolutions/5'
   },
   {
     title: 'Ajax type ahead',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small5.jpg"',
-    link: 'https://zougari47.github.io/JS30/mySolutions/5/'
+    link: 'https://zougari47.github.io/JS30/mySolutions/6/'
   },
   {
     title: 'array cardio day 2',
