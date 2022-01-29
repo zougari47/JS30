@@ -2,152 +2,152 @@ const data = [
   {
     title: 'JavaScript Drum Kit',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small0.jpg',
-    link: '../mySolutions/1/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/1/'
   },
   {
     title: 'CSS + JS clock',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small1.jpg"',
-    link: '../mySolutions/2/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/2/'
   },
   {
     title: 'playing with css variables and js',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small2.jpg"',
-    link: '../mySolutions/3/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/3/'
   },
   {
     title: 'array cardio day 1',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small3.jpg"',
-    link: '../mySolutions/4/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/3/'
   },
   {
     title: 'flex panels image gallery',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small4.jpg"',
-    link: '../mySolutions/5/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/4/'
   },
   {
     title: 'Ajax type ahead',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small5.jpg"',
-    link: '../mySolutions/6/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/5/'
   },
   {
     title: 'array cardio day 2',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small6.jpg"',
-    link: '../mySolutions/7/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/7/'
   },
   {
     title: 'fun with html5 canvas',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small7.jpg"',
-    link: '../mySolutions/8/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/8/'
   },
   {
     title: '14 must know dev tools tricks ',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small8.jpg"',
-    link: '../mySolutions/9/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/9/'
   },
   {
     title: 'hold shift to check multiple checkboxes',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small9.jpg"',
-    link: '../mySolutions/10/index.html'
+    link: '.https://zougari47.github.io/JS30/mySolutions/10/'
   },
   {
     title: 'custom html5 video player',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small10.jpg"',
-    link: '../mySolutions/11/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/11/'
   },
   {
     title: 'key sequence detection ',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small11.jpg"',
-    link: '../mySolutions/12/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/12/'
   },
   {
     title: 'slide in on scroll',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small12.jpg"',
-    link: '../mySolutions/13/index.html'
+    link: '.https://zougari47.github.io/JS30/mySolutions/13/'
   },
   {
     title: 'object and arrays - reference vs copy',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small13.jpg"',
-    link: '../mySolutions/14/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/14/'
   },
   {
     title: 'localstorage and event delegation',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small14.jpg"',
-    link: '../mySolutions/15/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/15/'
   },
   {
     title: 'Css text shadow mouse move Effect',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small15.jpg"',
-    link: '../mySolutions/16/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/16/'
   },
   {
     title: 'sorting band names without articles',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small16.jpg"',
-    link: '../mySolutions/17/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/17/'
   },
   {
     title: 'tally string times with reduce',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small17.jpg"',
-    link: '../mySolutions/18/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/18/'
   },
   {
     title: 'unreal webcam fun',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small18.jpg"',
-    link: '../mySolutions/19/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/19/'
   },
   {
     title: 'native speech recognition',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small19.jpg"',
-    link: '../mySolutions/20/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/20/'
   },
   {
     title: 'geolocation based speedometer and compass',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small20.jpg"',
-    link: '../mySolutions/21/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/21/'
   },
   {
     title: 'follow along links',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small21.jpg"',
-    link: '../mySolutions/22/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/22/'
   },
   {
     title: 'speech synthesis',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small22.jpg"',
-    link: '../mySolutions/23/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/23/'
   },
   {
     title: 'sticky nav',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small23.jpg"',
-    link: '../mySolutions/24/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/24/'
   },
   {
     title: 'event capture, propagation, bubbling and once',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small24.jpg"',
-    link: '../mySolutions/25/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/25/'
   },
   {
     title: 'stripe follow along dropdown',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small25.jpg"',
-    link: '../mySolutions/26/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/26/'
   },
   {
     title: 'click and drag to scroll',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small26.jpg"',
-    link: '../mySolutions/27/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/27/'
   },
   {
     title: 'video speed controller ui',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small27.jpg"',
-    link: '../mySolutions/28/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/28/'
   },
   {
     title: 'Countdown clock',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small28.jpg"',
-    link: '../mySolutions/29/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/29/'
   },
   {
     title: 'whack a mole game',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small29.jpg"',
-    link: '../mySolutions/30/index.html'
+    link: 'https://zougari47.github.io/JS30/mySolutions/30/'
   }
 ];
 const row = document.querySelector('.row');
@@ -179,7 +179,7 @@ function randomSort(arr) {
 
 function openLink() {
   const url = this.dataset.url;
-  window.open(url, '_self');
+  window.open(url, '_blank');
 }
 
 const cards = document.querySelectorAll('.card');
