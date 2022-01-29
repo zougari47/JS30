@@ -2,152 +2,152 @@ const data = [
   {
     title: 'JavaScript Drum Kit',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small0.jpg',
-    link: '../1/index.html'
+    link: '../mySolutions/1/index.html'
   },
   {
     title: 'CSS + JS clock',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small1.jpg"',
-    link: '../2/index.html'
+    link: '../mySolutions/2/index.html'
   },
   {
     title: 'playing with css variables and js',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small2.jpg"',
-    link: '../3/index.html'
+    link: '../mySolutions/3/index.html'
   },
   {
     title: 'array cardio day 1',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small3.jpg"',
-    link: '../4/index.html'
+    link: '../mySolutions/4/index.html'
   },
   {
     title: 'flex panels image gallery',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small4.jpg"',
-    link: '../5/index.html'
+    link: '../mySolutions/5/index.html'
   },
   {
     title: 'Ajax type ahead',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small5.jpg"',
-    link: '../6/index.html'
+    link: '../mySolutions/6/index.html'
   },
   {
     title: 'array cardio day 2',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small6.jpg"',
-    link: '../7/index.html'
+    link: '../mySolutions/7/index.html'
   },
   {
     title: 'fun with html5 canvas',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small7.jpg"',
-    link: '../8/index.html'
+    link: '../mySolutions/8/index.html'
   },
   {
     title: '14 must know dev tools tricks ',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small8.jpg"',
-    link: '../9/index.html'
+    link: '../mySolutions/9/index.html'
   },
   {
     title: 'hold shift to check multiple checkboxes',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small9.jpg"',
-    link: '../10/index.html'
+    link: '../mySolutions/10/index.html'
   },
   {
     title: 'custom html5 video player',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small10.jpg"',
-    link: '../11/index.html'
+    link: '../mySolutions/11/index.html'
   },
   {
     title: 'key sequence detection ',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small11.jpg"',
-    link: '../12/index.html'
+    link: '../mySolutions/12/index.html'
   },
   {
     title: 'slide in on scroll',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small12.jpg"',
-    link: '../13/index.html'
+    link: '../mySolutions/13/index.html'
   },
   {
     title: 'object and arrays - reference vs copy',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small13.jpg"',
-    link: '../14/index.html'
+    link: '../mySolutions/14/index.html'
   },
   {
     title: 'localstorage and event delegation',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small14.jpg"',
-    link: '../15/index.html'
+    link: '../mySolutions/15/index.html'
   },
   {
     title: 'Css text shadow mouse move Effect',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small15.jpg"',
-    link: '../16/index.html'
+    link: '../mySolutions/16/index.html'
   },
   {
     title: 'sorting band names without articles',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small16.jpg"',
-    link: '../17/index.html'
+    link: '../mySolutions/17/index.html'
   },
   {
     title: 'tally string times with reduce',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small17.jpg"',
-    link: '../18/index.html'
+    link: '../mySolutions/18/index.html'
   },
   {
     title: 'unreal webcam fun',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small18.jpg"',
-    link: '../19/index.html'
+    link: '../mySolutions/19/index.html'
   },
   {
     title: 'native speech recognition',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small19.jpg"',
-    link: '../20/index.html'
+    link: '../mySolutions/20/index.html'
   },
   {
     title: 'geolocation based speedometer and compass',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small20.jpg"',
-    link: '../21/index.html'
+    link: '../mySolutions/21/index.html'
   },
   {
     title: 'follow along links',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small21.jpg"',
-    link: '../22/index.html'
+    link: '../mySolutions/22/index.html'
   },
   {
     title: 'speech synthesis',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small22.jpg"',
-    link: '../23/index.html'
+    link: '../mySolutions/23/index.html'
   },
   {
     title: 'sticky nav',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small23.jpg"',
-    link: '../24/index.html'
+    link: '../mySolutions/24/index.html'
   },
   {
     title: 'event capture, propagation, bubbling and once',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small24.jpg"',
-    link: '../25/index.html'
+    link: '../mySolutions/25/index.html'
   },
   {
     title: 'stripe follow along dropdown',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small25.jpg"',
-    link: '../26/index.html'
+    link: '../mySolutions/26/index.html'
   },
   {
     title: 'click and drag to scroll',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small26.jpg"',
-    link: '../27/index.html'
+    link: '../mySolutions/27/index.html'
   },
   {
     title: 'video speed controller ui',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small27.jpg"',
-    link: '../28/index.html'
+    link: '../mySolutions/28/index.html'
   },
   {
     title: 'Countdown clock',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small28.jpg"',
-    link: '../29/index.html'
+    link: '../mySolutions/29/index.html'
   },
   {
     title: 'whack a mole game',
     img: 'https://res.cloudinary.com/wesbos/image/fetch/q_auto,f_auto/https://s3.amazonaws.com/js30-cdn/small29.jpg"',
-    link: '../30/index.html'
+    link: '../mySolutions/30/index.html'
   }
 ];
 const row = document.querySelector('.row');
